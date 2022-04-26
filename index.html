@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL shortener</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesomes.min.css">
+    <script src="https://kit.fontawesome.com/3c427754ee.js" crossorigin="anonymous"></script>
+<link>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Dancing+Script:wght@400;500;600;700&family=Fira+Sans&family=Inter:wght@100&family=Orelega+One&family=Pacifico&family=Redressed&family=Shizuru&family=Tenor+Sans&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Dancing+Script:wght@400;500;600;700&family=Fira+Sans&family=Inter:wght@100&family=Josefin+Sans:wght@600&family=Orelega+One&family=Pacifico&family=Redressed&family=Shizuru&family=Tenor+Sans&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Dancing+Script:wght@400;500;600;700&family=Fira+Sans&family=Inter:wght@100&family=Josefin+Sans:wght@600&family=Orelega+One&family=Pacifico&family=Redressed&family=Rubik:wght@600&family=Shizuru&family=Tenor+Sans&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav> -->
+    <section id="nav-point">
+        <nav class="navbar navbar-expand-lg navbar-light align-items-center">
+            <div class="container">
+              <a class="navbar-brand" href="#">Shortly</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                  </li>
+                </ul>
+                <button class="btn btn-hover l-btn ml-auto">Login</button>
+                <button class="btn s-btn">Sign up</button>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <section class="top-container">
+        <div class="container con-div">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="promo-title">More than just shorter links</h1>
+                    <p class="h-ex">Build your brand's recognition and get detailed<br>
+                    insights on how your links are performing</p>
+                    <button class="btn col-btn px-4">Get Started</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="undraw.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    
+        <div class="container in-div" id="app">
+            <div class="url-div">
+                <div class="container d-md-flex pt-4 justify-content-center">
+                    <div class="input-group mb-4 shadow gap-3">
+                        <input type="text" class="form-control" placeholder="Shorten a link here..." aria-label="Username" aria-describedby="basic-addon1">
+                        <button class="btn link-btn px-4 shadow"><p>Shorten It!</p></button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light">
+        <div class="container con-s-div">
+            <div class="text-center">
+                <h2 class="s-p-title"><b>Advanced Statistics</b></h2>
+                <p style="color: grey;">Track how your links are performing across the web with<br>
+                our advanced statistics dashboard</p>
+            </div>
+            <div class="row card-div">
+                <div class="col-md-4">
+                    <div class="card ff-card">
+                        <div class="card-body pt-5 ml-4">
+                            <div class="i-div py-3"><i class="fa fa-cubes"></i></div>
+                            <b class="c-bold">Brand Recognition</b>
+                            <p class="pt-3 c-text">Boost your brand recognition with<br>
+                            each click. Generic links don't mean a<br>
+                            thing. Branded links help instil<br> confidence in your content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card f-card">
+                        <div class="card-body pt-5">
+                            <div class="i-div py-3"><i class="fa fa-history"></i></div>
+                            <b class="c-bold">Detailed Records</b>
+                            <p class="pt-3 c-text">Gain insights into who is clicking your<br>
+                                links. Knowing when and where<br>
+                                people engage in your content<br>helps inform better decisions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card s-card">
+                        <div class="card-body pt-5">
+                            <div class="i-div py-3"><i class="fa fa-paint-brush"></i></div>
+                            <b class="c-bold">Fully Customizable</b>
+                            <p class="pt-3 c-text">Improve brand awareness and<br>
+                                content discoverability through<br>
+                                customizable links, supercharging<br>audience engagement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="st-section">
+            <div class="container d-flex justify-content-center pt-5">
+                <h1>Boost your links today</h1>
+            </div>
+            <div class="container d-flex justify-content-center mt-2">
+                <button class="btn col-btn px-4">Get Started</button>
+            </div>
+    </section>
+
+    <section class="sl-section">
+        <div class="container">
+            <div class="container-fluid d-md-flex ss-div">
+                <div><button class="btn b-btn"><h2>Shortly</h2></button></div>
+                <ul class="b-list fb-list">
+                    <li class="text-left"><b>Features</b></li>
+                    <li><a class="btn nb-btn">Link Shortening</a></li>
+                    <li><a class="btn nb-btn">Branded Links</a></li>
+                    <li><a class="btn nb-btn">Analytics</a></li>
+                </ul>
+                <ul class="b-list">
+                    <li class="text-left"><b>Resources</b></li>
+                    <li><a class="btn nb-btn">Blog</a></li>
+                    <li><a class="btn nb-btn">Developers</a></li>
+                    <li><a class="btn nb-btn">Support</a></li>
+                </ul>
+                <ul class="b-list">
+                    <li class="text-left"><b>Company</b></li>
+                    <li><a class="btn nb-btn">About</a></li>
+                    <li><a class="btn nb-btn">Our Team</a></li>
+                    <li><a class="btn nb-btn">Careers</a></li>
+                    <li><a class="btn nb-btn">Contact</a></li>
+                </ul>
+                <div class="d-md-flex text-white social-div">
+                    <a href="" class="me-3"><i class="fab fa-facebook-square text-white"></i></a>
+                    <a href="" class="me-3"><i class="fab fa-twitter text-white"></i></a>
+                    <a href="" class="me-3"><i class="fab fa-pinterest text-white"></i></a>
+                    <a href=""><i class="fab fa-instagram text-white"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.js"></script>
+    <script src="Vue.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3c427754ee.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

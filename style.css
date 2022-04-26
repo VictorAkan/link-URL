@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand {
+    font-size: 32px !important;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+}
+#nav-point {
+    position: sticky !important;
+    background-color: white !important;
+    top: 0;
+    z-index: 10;
+}
+.l-btn {
+    margin-left: auto !important;
+}
+a {
+    transition: all 0.4s ease !important;
+}
+.l-btn:hover {
+    background-color: rgb(79, 220, 194);
+    color: white !important;
+    font-weight: bold;
+    border-radius: 25px;
+}
+.s-btn {
+    background-color: rgb(79, 220, 194) !important;
+    color: white !important;
+    border-radius: 25px !important;
+}
+.h-ex {
+    color: rgb(148, 148, 148);
+}
+.con-div {
+    margin-top: 120px !important;
+    min-height: 70vh;
+}
+.promo-title {
+    font-family: "Rubik", sans-serif;
+    font-weight: 900;
+    font-size: 55px;
+}
+.btn {
+    transition: all 0.4s ease !important;
+}
+.btn:hover {
+    transform: translateY(-5px) !important;
+}
+.col-btn {
+    background-color: rgb(79, 220, 194) !important;
+    color: white !important;
+    border-radius: 25px !important;
+}
+.img-fluid {
+    margin-top: -100px;
+}
+.url-div {
+    border-radius: 6px;
+    background-image: url(/p-slide.png);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-blend-mode: darken !important;
+    background-color: rgba(48, 4, 59, 0.7);
+}
+.link-btn {
+    background-color: rgb(79, 220, 194) !important;
+    color: white !important;
+    height: 40px;
+}
+.s-p-title {
+    padding-top: 100px;
+}
+.f-card {
+    margin-top: 30px;
+    position: relative;
+}
+.f-card::before {
+    content: '';
+    margin-top: 90px;
+    position: absolute;
+    background: rgb(79,220,194);
+    height: 6px;
+    width: 24px;
+    margin-left: -24px;
+}
+.s-card {
+    margin-top: 60px;
+    position: relative;
+}
+.s-card::before {
+    content: '';
+    margin-top: 55px;
+    position: absolute;
+    background: rgb(79,220,194);
+    height: 6px;
+    width: 24px;
+    margin-left: -24px;
+}
+.card-div {
+    margin-top: 70px !important;
+}
+.c-text {
+    padding-left: 20px;
+    color: rgb(149, 149, 149);
+}
+.c-bold {
+    padding-left: 20px;
+    font-size: 25px;
+}
+.card {
+    border: none !important;
+}
+.ff-card {
+    position: relative;
+}
+.i-div {
+    position: absolute;
+    background-color: rgb(14, 1, 18);
+    border-radius: 50% !important;
+    color: rgb(79, 220, 194);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -76px !important;
+}
+.con-s-div {
+    padding-bottom: 100px !important;
+}
+.top-container {
+    background-image: linear-gradient(white 93%, rgb(248, 248, 248) 7%);
+}
+.st-section {
+    background-image: url(/p-slide.png);
+    color: white;
+    padding-bottom: 60px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-blend-mode: darken !important;
+    background-color: rgba(48, 4, 59, 0.7);
+}
+.sl-section {
+    background-color: rgb(14, 1, 31);
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+.b-btn {
+    color: white !important;
+}
+.b-list {
+    list-style-type: none;
+}
+.nb-btn {
+    color: rgb(194, 193, 193) !important;
+}
+.social-div {
+    justify-content: space-between !important;
+    margin-left: 50px;
+}
+.fb-list {
+    margin-left: 170px;
+}
+
+@media (max-width:748px) {
+    .img-fluid {
+        margin-top: -0px;
+    }
+    .s-card {
+        margin-top: 30px;
+    }
+    .s-card::before {
+        display: none;
+    }
+    .f-card::before {
+        display: none;
+    }
+    .fb-list {
+        margin-left: 0px;
+    }
+    .social-div {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:991px) {
+    .social-div {
+        margin-left: 0px !important;
+    }
+    .img-fluid {
+        margin-top: -0px;
+    }
+    .top-container {
+        align-items: center;
+    }
+    .ss-div {
+        flex-wrap: wrap;
+        display: block;
+    }
+}
