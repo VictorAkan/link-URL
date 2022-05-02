@@ -163,6 +163,19 @@ a {
 .fb-list {
     margin-left: 170px;
 }
+.d-url-card {
+    background-color: purple !important;
+    color: white !important;
+}
+.url-card-body {
+    background-color: rgb(167, 40, 167) !important;
+    justify-content: space-between !important;
+}
+.foo {
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
+}
 
 @media (max-width:748px) {
     .img-fluid {
